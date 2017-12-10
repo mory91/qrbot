@@ -7,10 +7,10 @@ const Qr = require('./model/message')
 
 let nums = {}
 Qr.find({}, function(err, res) {
-    for(let r in res) {
-        if (!nums[r.chatId])
-            nums[r.chatId] = 0
-        nums[r.chatId] = (nums[r.chatId] + 1);
+    for (let i = 0; i < res.length; i++) {
+        if (nums[res[i].chatId])
+            nums[res[i].chatId] = 0;    
+        nums[res[i].chatId] ++
     }
     console.log(nums)
 })
