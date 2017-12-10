@@ -10,5 +10,5 @@ Qr.find({}, function(err, res) {
     for(let r in res) {
         nums[r.chatId] = 0 | (nums[r.chatId] + 1);
     }
-    console.print(nums)
+    console.log(nums)
 })
