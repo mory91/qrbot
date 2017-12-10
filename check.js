@@ -1,4 +1,3 @@
-import { forEach } from '../../.cache/typescript/2.6/node_modules/@types/async';
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/QR');
